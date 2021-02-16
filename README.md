@@ -6,7 +6,7 @@ stow --adopt -nvSt ~ bashrc
 ```
 ### For link..
 ```
-stow --adopt -vSt ~ gitconfig
+stow --adopt -vSt ~ bashrc
 ```
 ### For simulate unlink...
 ```
