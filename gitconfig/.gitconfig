@@ -1,0 +1,10 @@
+[include]
+	path = ~/.gitconfig.user
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[commit]
+	gpgSign = true
+[core]
+	editor = nvim
