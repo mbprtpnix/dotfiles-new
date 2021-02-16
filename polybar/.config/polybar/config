@@ -70,7 +70,7 @@ tray-position = right
 tray-padding = 1
 ;tray-background = #0063ff
 
-;wm-restack = bspwm
+wm-restack = bspwm
 
 ;override-redirect = true
 
