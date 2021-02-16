@@ -2,6 +2,26 @@
 # wm independent hotkeys
 #
 
+#########
+# Media #
+#########
+
+# Toggle mute
+XF86AudioMute
+    pulseaudio-ctl mute
+
+# Toggle mic mute
+XF86AudioMicMute
+    pulseaudio-ctl mute-input
+
+# Change volume
+XF86Audio{Raise,Lower}Volume
+    pulseaudio-ctl {up,down}
+
+# Change volume
+super + {k,j}
+    pulseaudio-ctl {up,down}
+
 # terminal emulator
 super + Return
 	alacritty
