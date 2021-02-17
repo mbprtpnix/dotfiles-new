@@ -95,6 +95,7 @@ format-connected-prefix = "  "
 format-connected-prefix-foreground = #fefefe
 format-connected-foreground = #fefefe
 format-connected-background = #8d62a9
+format-underline = #f90000
 
 ################################################################################
 
@@ -111,6 +112,7 @@ format-connected-prefix = "  "
 format-connected-prefix-foreground = #fefefe
 format-connected-foreground = #fefefe
 format-connected-background = #8d62ad
+format-underline = #f90000
 
 ################################################################################
 
@@ -121,11 +123,11 @@ format-connected-background = #8d62ad
 type = custom/script
 exec = uptime | awk -F, '{sub(".*up ",x,$1);print $1}'
 interval = 100
-label = UP : %output%
+label = uptime : %output%
 
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
+format-prefix = ""
 format-prefix-foreground = #C15D3E
 format-underline = #C15D3E
 
@@ -138,7 +140,7 @@ label = %title:0:30:...%
 [module/kernel]
 type = custom/script
 exec = uname -r
-label = KERNEL : %output%
+label = kernel : %output%
 tail = false
 interval = 1024
 format-underline = #0a6cf5
@@ -149,7 +151,7 @@ type = custom/script
 exec = checkupdates | wc -l
 tail = false
 interval = 1024
-label = REPO : %output%
+label = updates : %output%
 format-underline = #f90000
 
 [module/xkeyboard]
