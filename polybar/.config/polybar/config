@@ -35,7 +35,7 @@ height = 30
 ;offset-y = 1%
 radius = 0.0
 fixed-center = true
-separator = |
+;separator = |
 
 border-top-size = 10
 border-left-size = 13
@@ -46,7 +46,7 @@ enable-ipc = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 2
+line-size = 5
 line-color = #f00
 
 border-size = 0
@@ -89,13 +89,15 @@ type = custom/script
 exec = uname -r
 tail = false
 interval = 1024
+format-underline = #0a6cf5
 
 [module/pacman]
 type = custom/script
-exec = pacman -Qu | wc -l
+exec = checkupdates | wc -l
 tail = false
 interval = 1000
 label = %output%
+format-underline = #f90000
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -139,7 +141,8 @@ label-urgent = %index%!
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
-label-empty = %index%
+label-empty = 
+;label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 
