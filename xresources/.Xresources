@@ -1,5 +1,5 @@
 xterm*faceName: Source Code Pro
-xterm*faceSize: 12
+xterm*faceSize: 10
 
 ! special
 *.foreground:   #f8f8f8
