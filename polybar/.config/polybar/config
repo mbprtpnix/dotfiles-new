@@ -123,7 +123,7 @@ format-underline = #f90000
 type = custom/script
 exec = uptime | awk -F, '{sub(".*up ",x,$1);print $1}'
 interval = 100
-label = uptime : %output%
+label = %output%
 
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
@@ -140,7 +140,7 @@ label = %title:0:30:...%
 [module/kernel]
 type = custom/script
 exec = uname -r
-label = kernel : %output%
+label = %output%
 tail = false
 interval = 1024
 format-underline = #0a6cf5
@@ -151,7 +151,7 @@ type = custom/script
 exec = checkupdates | wc -l
 tail = false
 interval = 1024
-label = updates : %output%
+label = %output%
 format-underline = #f90000
 
 [module/xkeyboard]
