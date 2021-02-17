@@ -93,6 +93,7 @@ format-underline = #0a6cf5
 
 [module/pacman]
 type = custom/script
+;exec = pacman -Qu | wc -l
 exec = checkupdates | wc -l
 tail = false
 interval = 1000
