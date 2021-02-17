@@ -8,4 +8,4 @@
 export GPG_TTY=$(tty)
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+PS1="$(echo -e "\033[34m~ \033[00m")"

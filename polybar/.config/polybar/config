@@ -64,7 +64,7 @@ font-2 = Iosevka Nerd Font Mono:pixelsize=10;2
 
 modules-left = bspwm uptime
 modules-center = pacman kernel
-modules-right = networkspeeddown networkspeedup filesystem pulseaudio xkeyboard memory cpu wlan eth battery temperature date
+modules-right = networkspeeddown networkspeedup xkeyboard wlan eth battery date
 
 tray-position = right
 tray-padding = 1
